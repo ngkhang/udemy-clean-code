@@ -10,6 +10,11 @@
     - [Section 02 - Naming](#section-02---naming)
       - [How to name things correctly?](#how-to-name-things-correctly)
       - [Best Practices](#best-practices)
+    - [Section 03 - Comments and formatting](#section-03---comments-and-formatting)
+      - [Comments](#comments)
+      - [Formatting](#formatting)
+        - [Vertical Formatting](#vertical-formatting)
+        - [Horizontal Formatting](#horizontal-formatting)
   - [References](#references)
 
 ## Sections
@@ -75,6 +80,55 @@
 - Avoid including descriptions and unnecessary or redundant details
 - Choose distinctive names to make it easy to choose
 - Consistent name
+
+### Section 03 - Comments and formatting
+
+#### Comments
+
+- What are Bad Comments?
+  > It can mean "redundant", "confusing", or even "misleading"
+
+  - **Redundant information**: they add nothing and waste time reading them
+  - **Dividers/Block markers**: they only stop your reading flow and make
+analyzing the code file harder.
+  - **Misleading comments**: they mislead the reader.
+  - **Commented-out code**:  instead, just delete it because we can use source control, and we can always bring back old code
+- How can we improve it?
+  - **Legal information**: maybe we are required to add legal information to your code, which is right at the top of the code file.
+  - **"Required" explanations**: explanations that can’t be replaced by good naming
+  - **Comment of Warnings**: in rare cases, warnings next to some code
+  - **Todo notes**: shouldn't over-do it
+
+#### Formatting
+
+> Code formatting is important and greatly improves readability and conveys meaning
+> Each language has different formatting rules.
+
+##### Vertical Formatting
+
+> Using the - well - vertical space in your code file.
+
+- Best practices:
+  - Adding blank lines or maybe combining with grouping related concepts together
+  - Vertical Density and Vertical Distance
+
+    | Vertical Density                                     | Vertical Distance                                               |
+    | ---------------------------------------------------- | --------------------------------------------------------------- |
+    | The related concepts should be kept closely together | The  concepts which are not closely related should be separated |
+
+  - Ordering Functions/Methods
+    - The ordering should follow the "stepdown rule"
+    - A function B should be (closely) below function B - at least if your programming language allows such an ordering.
+  - Splitting code across files
+    - Should be split into multiple files, and then use import and export statements to connect your code
+
+##### Horizontal Formatting
+
+> Using the horizontal space - that means lines should be kept short and readable
+
+- Best practices:
+  - Using short names
+  - Breaking lines into multiple lines: should use relatively short lines
 
 ## References
 
